@@ -1,38 +1,8 @@
-plugins = []
-headers = []
-
-[functions]
-
-[functions."*"]
-
 [build]
-publish = "C:\\Users\\Administrator\\Desktop\\officeset\\office-setup\\dist"
-publishOrigin = "ui"
-commandOrigin = "ui"
-command = "npm run build"
-
-[build.environment]
-
-[build.processing]
-
-[build.processing.css]
-
-[build.processing.html]
-
-[build.processing.images]
-
-[build.processing.js]
-
-[build.services]
+  publish = "dist"
+  command = "npm run build"
 
 [[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200.0
-force = false
-
-[redirects.query]
-
-[redirects.conditions]
-
-[redirects.headers]
+  from = "/*"
+  to = "/index.html"
+  status = 200
